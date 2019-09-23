@@ -94,13 +94,3 @@ TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=order
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
-
-
-#Include DTBO image
-BOARD_PREBUILT_DTBOIMAGE := device/umidigi/f1_play/prebuilt/dtbo.img
-BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_BOOTIMG_HEADER_VERSION := 1
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-
